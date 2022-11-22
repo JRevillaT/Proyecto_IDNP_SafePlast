@@ -29,24 +29,24 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, miConsumoFragment).commit();
 
-        BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.MiConsumo);
+        /*BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.MiConsumo);
         badgeDrawable.setVisible(true);
-        badgeDrawable.setNumber(8);
+        badgeDrawable.setNumber(8);*/
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.MiConsumo:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, miConsumoFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, miConsumoFragment).commit(); break;
                     case R.id.Informate:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, informateFragment).commit();
-                    case R.id.Estadisticas:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, estadisticasFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, informateFragment).commit(); break;
                     case R.id.MiCuenta:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, perfilFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, perfilFragment).commit(); break;
+                    case R.id.Estadisticas:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, estadisticasFragment).commit(); break;
                     case R.id.Nosotros:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, nosotrosFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, nosotrosFragment).commit(); break;
                 }
                 return false;
             }
