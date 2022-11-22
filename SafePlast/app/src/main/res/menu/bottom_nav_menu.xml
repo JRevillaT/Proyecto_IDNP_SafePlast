@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MiConsumo"
+        android:title="Mi Consumo"
+        android:icon="@drawable/ic_baseline_battery_mi_consumo" />
+    <item
+        android:id="@+id/Informate"
+        android:title="Informate"
+        android:icon="@drawable/ic_baseline_informate" />
+    <item
+        android:id="@+id/MiCuenta"
+        android:title="Cuenta"
+        android:icon="@drawable/ic_baseline_account_box_mi_cuenta" />
+    <item
+        android:id="@+id/Estadisticas"
+        android:title="Estadisticas"
+        android:icon="@drawable/ic_baseline_bar_chart_estadisticas" />
+    <item
+        android:id="@+id/Nosotros"
+        android:title="Nosotros"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_nosotros" />
+</menu>
