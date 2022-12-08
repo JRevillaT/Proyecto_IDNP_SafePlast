@@ -12,23 +12,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Mis Estadisticas"
+            android:textSize="45dp"/>
+
         <com.example.safeplast.PieChartCustom
             android:id="@+id/graficoCircular"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="20dp"
             android:ems="10" />
 
-        <com.example.safeplast.Leyend_PieChart
+        <com.example.safeplast.Leyend_Charts
             android:id="@+id/leyenda"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="20dp"
             android:ems="10" />
-        
+
+        <com.example.safeplast.BarChartCustom
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
     </LinearLayout>
 
 </RelativeLayout>

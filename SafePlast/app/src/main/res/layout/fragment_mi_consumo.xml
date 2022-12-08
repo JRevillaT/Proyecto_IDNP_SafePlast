@@ -7,12 +7,48 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment de Mi Consumo"
-        android:textSize="25dp"
-        android:layout_centerInParent="true" />
 
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:onClick="registerConsumo"
+        android:text="Registrar"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="listarConsumo"
+        android:text="Listar"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="editConsumo"
+        android:text="Modificar"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="deleteConsumo"
+        android:text="Eliminar"
+        android:textSize="16sp" />
 
 </RelativeLayout>

@@ -1,16 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Perfil">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="327dp"
+        android:text="Nombre : "
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="381dp"
+        android:text="Edad : "
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="429dp"
+        android:text="Ocupacion : "
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/nomID"
         android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="326dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text=""
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/edID"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="379dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text=""
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/ocuID"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="430dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:text=""
+        app:autoSizeTextType="uniform"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:text="Fragment del Perfil del Usuario"
-        android:textSize="25dp"
-        android:layout_centerInParent="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="72dp"
+        android:text="Editar"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="21dp"
+        android:text="Bienvenido"
+        app:autoSizeTextType="uniform" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/ic_contact_mail_black_24dp" />
 
 </RelativeLayout>
